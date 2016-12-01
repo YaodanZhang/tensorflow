@@ -15,7 +15,7 @@ Tensorflow Environment Setup
 	- eval $(docker-machine env tensorflow)
 
 * Running the Docker container from the TW AI Club repository
-	- docker run -p 8888:8888 --name tensorflow -v /Users/twer/Documents/development/docker/tensorflow/notebook:/notebooks/ -d twaiclub/tensorflow-python3
+	- docker run -p 8888:8888 --name tensorflow -v ${you-local-file-location-to-mount}:/notebooks/ -d twaiclub/tensorflow-python3
 
 * Go to: http://your-virtual-machine-ip:8888, and then you can do everything you want
 
@@ -23,20 +23,3 @@ Tensorflow Environment Setup
 
 * And there is a link about this course in [udacity](https://classroom.udacity.com/courses/ud730). You can get more information from it.
 
-
-Agenda
-======
-
-## Knowledge Prepare
-* Introduce what we will do (Create a classifer to recognition handwritten digits)
-* Introduce how to do it ( transfer image to array, using logistic regression to train and pridict)
-* Introduce Logistic Regression
-* Introduce some libs(numpy, matplotlib.pyplot)
-
-
-## Workshop
-* Download the images
-* Transfer image to array
-* Extract training and testing data
-* Store data into a file
-* Training classifier mode via Logistic Regression
